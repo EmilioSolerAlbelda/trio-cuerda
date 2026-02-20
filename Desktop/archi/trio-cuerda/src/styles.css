@@ -1,0 +1,16 @@
+
+
+:root {
+--color-primario: #c24f2e;  
+--color-secundario: #aebab0;  
+--color-terciario: #e8d1c3;    
+}
+
+body {
+
+background-color: var(--color-terciario);
+
+color: #2c2c2c; 
+margin: 0;
+font-family: 'Helvetica Neue', Arial, sans-serif;
+}
