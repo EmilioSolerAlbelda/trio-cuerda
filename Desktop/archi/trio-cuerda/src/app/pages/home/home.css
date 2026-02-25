@@ -1,0 +1,32 @@
+.titulo-principal {
+font-family: 'Great Vibes', cursive;
+color: var(--color-primario);
+
+-webkit-text-stroke: 0.5px black;
+text-stroke: 0.5px black; 
+font-size: 5rem;
+font-weight: 400;
+margin-bottom: 0;
+}
+
+.subtitulo {
+font-family: 'Amatic SC', cursive;
+color: var(--color-secundario);
+font-style: italic;
+-webkit-text-stroke: 0.5px black;
+text-stroke: 0.5px black;
+font-size: 1.8rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 4px; 
+}
+
+@media (min-width: 768px) {
+.titulo-principal {
+    font-size: 7rem;
+}
+.subtitulo {
+    font-size: 2.5rem;
+    letter-spacing: 6px; 
+}
+}

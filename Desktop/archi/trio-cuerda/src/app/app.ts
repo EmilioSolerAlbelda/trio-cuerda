@@ -1,12 +1,20 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+
+
+import { NavbarComponent } from './shared/navbar/navbar';
+
+
+import { HomeComponent } from './pages/home/home';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, NavbarComponent, HomeComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
-export class App {
-  protected readonly title = signal('trio-cuerda');
+export class AppComponent {
+  title = 'Trio de Cuerda';
 }
