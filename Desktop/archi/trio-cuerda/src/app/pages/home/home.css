@@ -30,3 +30,32 @@ letter-spacing: 4px;
     letter-spacing: 6px; 
 }
 }
+
+.custom-presentation-box {
+  border: 3px solid var(--color-principal, #c24f2e);
+  border-radius: 24px;
+}
+
+.custom-image-shadow {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.text-primary-custom {
+  color: var(--color-principal, #c24f2e);
+}
+
+.text-secondary-custom {
+  color: var(--color-secundario, #aebab0);
+}
+
+.ratio {
+  overflow: hidden;
+}
+
+.ratio img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.ratio:hover img {
+  transform: scale(1.08);
+}
