@@ -1,0 +1,55 @@
+<div class="container py-5 mt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+
+      <div class="formulario-contacto">
+        <div class="encabezado-contacto text-center">
+          <h2 class="fw-bold text-white mb-1">Contacto</h2>
+          <p class="text-white-50 small">Escríbenos y te responderemos lo antes posible</p>
+        </div>
+
+        <div class="cuerpo-contacto p-4 p-md-5">
+          <form action="https://formspree.io/f/TU_ID_AQUÍ" method="POST">
+
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" name="nombre" class="form-control" placeholder="Introduce tu nombre" required>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Correo Electrónico</label>
+                <input type="email" name="_replyto" class="form-control" placeholder="tu@email.com" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Teléfono</label>
+                <input type="tel" name="telefono" class="form-control" placeholder="600 000 000" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Tipo de evento</label>
+              <select name="tipo_evento" class="form-select">
+                <option value="boda">Boda</option>
+                <option value="concierto">Concierto / Gala</option>
+                <option value="evento_privado">Evento Privado</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label">Comentario</label>
+              <textarea name="consulta" class="form-control" rows="4"
+                placeholder="Detalla aquí tu consulta (fecha, lugar, dudas...)" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-enviar w-100">
+              ENVIAR CONSULTA
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

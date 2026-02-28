@@ -1,0 +1,29 @@
+.titulo-primario {
+  color: #c24f2e;
+}
+
+.linea-decorativa {
+  height: 4px;
+  width: 60px;
+  background-color: #c24f2e;
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.contenedor-foto {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  height: 300px; /* Altura fija para que todas sean iguales */
+}
+
+.img-galeria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para que la foto rellene el cuadro sin deformarse */
+  transition: transform 0.5s ease;
+}
+
+.contenedor-foto:hover .img-galeria {
+  transform: scale(1.1);
+}

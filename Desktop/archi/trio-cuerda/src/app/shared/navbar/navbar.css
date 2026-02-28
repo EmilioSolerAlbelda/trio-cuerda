@@ -7,3 +7,14 @@ transition: color 0.3s ease;
 .nav-link:hover {
 color: var(--color-primario);
 }
+
+.nav-link {
+  color: white !important;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+  color: white !important;
+  opacity: 1;
+}
