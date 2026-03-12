@@ -1,31 +1,34 @@
-.galeria-container {
-  background-color:whitesmoke; 
-  padding: 40px 20px;
-  border: 3px solid var(--color-primario);
-  border-radius: 20px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.foto-card {
-  border: 6px solid var(--color-secundario);
-  border-radius: 12px;
-  overflow: hidden;
+/* EL MARCO QUE ENGLOBA TODO */
+.gallery-master-frame {
+  /* Borde grueso con tu color primario #c24f2e */
+  border: 4px solid #c24f2e !important;
+  background-color: #ffffff; /* Fondo blanco para que las fotos resalten */
   transition: all 0.4s ease;
-  cursor: pointer;
-  background-color: white;
-  height: 350px; 
 }
 
-.foto-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 20px rgba(194, 79, 46, 0.3);
-  border-color: var(--color-primario);
+/* Opcional: un toque de elegancia extra al pasar el ratón por el marco */
+.gallery-master-frame:hover {
+  box-shadow: 0 10px 30px rgba(194, 79, 46, 0.1) !important;
 }
 
-.foto-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* MANTENEMOS LAS TARJETAS INDIVIDUALES */
+.gallery-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(174, 186, 176, 0.3); /* Color secundario suave para no recargar */
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.gallery-card img {
   display: block;
+  width: 100%;
+  height: 250px; /* Ajustado para que quepan bien dentro del marco */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.02);
+  border-color: #c24f2e;
 }

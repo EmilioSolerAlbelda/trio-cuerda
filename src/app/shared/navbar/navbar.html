@@ -18,7 +18,8 @@
         </li>
 
         <li class="nav-item mx-2">
-          <a class="nav-link" routerLink="/proyectos">Proyectos</a>
+          <a class="nav-link text-white fw-bold" routerLink="/proyectos" routerLinkActive="active-link"
+            (click)="closeMenu()">Proyectos</a>
         </li>
 
         <li class="nav-item mx-2">
@@ -27,20 +28,21 @@
         </li>
 
         <li class="nav-item mx-2">
-          <a class="nav-link text-white fw-bold" routerLink="/presentacion" (click)="closeMenu()">Presentación</a>
+          <a class="nav-link text-white fw-bold" routerLink="/presentacion" routerLinkActive="active-link"
+            (click)="closeMenu()">Presentación</a>
         </li>
 
         <li class="nav-item mx-2">
-          <a class="nav-link text-white fw-bold" routerLink="/galeria" (click)="closeMenu()">Galería</a>
+          <a class="nav-link text-white fw-bold" routerLink="/galeria" routerLinkActive="active-link"
+            (click)="closeMenu()">Galería</a>
         </li>
 
         <li class="nav-item mx-2">
-          <a class="nav-link" href="mailto:triodarchievents@gmail.com">Contacto</a>
+          <a class="nav-link text-white fw-bold" href="mailto:triodarchievents@gmail.com"
+            (click)="closeMenu()">Contacto</a>
         </li>
       </ul>
     </div>
 
   </div>
 </nav>
-
-<div style="padding-top: 80px;"></div>

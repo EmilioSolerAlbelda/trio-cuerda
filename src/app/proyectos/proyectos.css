@@ -1,26 +1,32 @@
+/* DISEÑO DEL BOTÓN UNIFICADO */
+.btn-custom {
+  background-color: #c24f2e !important; /* Color 1: Naranja Intenso */
+  border: none !important;
+  color: white !important;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px; /* Bordes redondeados elegantes */
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.btn-custom:hover {
+  background-color: #a03f25 !important; /* Un tono más oscuro */
+  transform: translateY(-3px); /* Pequeño salto hacia arriba */
+  box-shadow: 0 6px 15px rgba(194, 79, 46, 0.3) !important;
+}
+
+/* Efecto al pulsar (Active) */
+.btn-custom:active {
+  transform: translateY(-1px);
+}
+
+/* Caja de Proyecto (Ajuste de borde con Color 2) */
 .custom-presentation-box {
   background-color: #ffffff;
-  border: 1px solid #e8d1c3;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.custom-presentation-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 1rem 3rem rgba(194, 79, 46, 0.1) !important;
-}
-
-.btn-custom {
-  background-color: #c24f2e;
-  border-radius: 50rem;
-  padding: 0.75rem 1.75rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.btn-custom:hover {
-  background-color: #ffffff;
-  color: #c24f2e !important;
-  border-color: #c24f2e;
-  transform: translateY(-2px);
+  border: 1px solid rgba(174, 186, 176, 0.4); /* Color 2: aebab0 */
 }
