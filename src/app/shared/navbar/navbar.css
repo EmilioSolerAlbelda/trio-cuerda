@@ -1,0 +1,35 @@
+.logo-navbar {
+  transition: transform 0.3s ease;
+}
+
+.logo-navbar:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif; /* O la que prefieras */
+}
+
+.nav-link:hover, 
+.nav-link:focus, 
+.nav-link.active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* Para que el menú desplegado en móvil se vea bien */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #c24f2e;
+    padding-bottom: 20px;
+  }
+  .nav-item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(232, 209, 195, 0.2);
+  }
+}

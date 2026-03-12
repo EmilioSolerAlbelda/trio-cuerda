@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&display=swap');
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primario: #c24f2e;
+  --color-secundario: #aebab0;
+  --color-terciario: #f0f2ff;
+  --blanco: #ffffff;
+  --fuente-elegante: 'Great Vibes', cursive;
+  --fuente-titulos: 'Amatic SC', cursive;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--color-terciario);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, .titulo-elegante {
+  font-family: var(--fuente-elegante);
+}
+
+h2, h3, .titulo-seccion {
+  font-family: var(--fuente-titulos);
+}
+
+.btn-custom {
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #a33f25;
+}

@@ -1,0 +1,13 @@
+<section class="galeria-container container my-5">
+  <h2 class="text-center mb-5" style="color: var(--color-primario); font-weight: bold;">
+    Nuestra Galería
+  </h2>
+
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-lg-4" *ngFor="let foto of fotos">
+      <div class="foto-card shadow-sm">
+        <img [src]="foto.url" [alt]="foto.alt" class="foto-img">
+      </div>
+    </div>
+  </div>
+</section>
