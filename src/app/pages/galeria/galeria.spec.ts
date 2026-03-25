@@ -1,18 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Galeria } from './galeria';
+// 1. Importamos el nombre real de la clase
+import { GaleriaComponent } from './galeria';
 
 describe('Galeria', () => {
-  let component: Galeria;
-  let fixture: ComponentFixture<Galeria>;
+  // 2 y 3. Actualizamos las variables
+  let component: GaleriaComponent;
+  let fixture: ComponentFixture<GaleriaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Galeria]
-    })
-    .compileComponents();
+      // 4. Actualizamos el import del módulo
+      imports: [GaleriaComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(Galeria);
+    // 5. Actualizamos la creación del componente
+    fixture = TestBed.createComponent(GaleriaComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
